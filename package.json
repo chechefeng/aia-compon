@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "aia": "vue-cli-service build --target lib --name myLib src/components/index.js && cp -r  ./dist/myLib.umd.js  ./node_modules/aia-element-ui/index.js"
   },
   "dependencies": {
     "core-js": "^3.3.2",
+    "element-ui": "^2.12.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {

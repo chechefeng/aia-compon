@@ -1,24 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <aia-button @click="sub" size="small" type="success">提交22</aia-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from "./components/HelloWorld.vue";
+// import { AiaButton, Item } from "aia-element-ui";
+// import { AiaButton, Item } from "./components/index";
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  name: "app",
+  // components: {
+  //   // HelloWorld
+  //   AiaButton: AiaButton,
+  //   Item: Item
+  // },
+  methods: {
+    sub() {
+      console.log(12312);
+    }
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
